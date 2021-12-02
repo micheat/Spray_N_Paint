@@ -54,7 +54,7 @@ h2
 <!-- Navigation -->
 <div class="container-fluid">
 	<div class="nav-wrapper">
-      <div class="left-side">
+      <div class="left-side row">
         <div class="nav-link-wrapper active-nav-link">
           <a href="index.html">Home</a>
         </div>
@@ -74,7 +74,7 @@ h2
           <a href="#">F.A.Q.</a>
         </div>
       </div>
-      <div class="right-side">
+	  <div class="right-side row">
 		<!--Dropdown Menu For Search-->
 		<div class="nav-link-wrapper">
 	      <div class="dropdown">
@@ -146,8 +146,8 @@ h2
 				  </label>
 				</div>
 				<div class="container-login" style="background-color:#f1f1f1">
-				  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-				  <span class="psw">Forgot <a href="forgotPass.html">password?</a></span>
+				  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn container-fluid">Cancel</button>
+				  <span class="psw">Forgot <a href="#">password?</a></span>
 				</div>
 			  </form>
 			</div>
@@ -166,7 +166,7 @@ h2
 	<p style="text-align:center;"><strong>-SPRAY N' PAINT</strong></i></p>
 </div>
 <!--Newsletter Sign Up-->
-<form>
+<form class="hidden-xs hidden-sm">
     <h3>Subscribe to our Newsletter</h3>
 	<div class="containers pt-3">
       <input type="email" placeholder="Email address" name="mail" required>
@@ -175,14 +175,17 @@ h2
 </form>
 <!--External Links-->
 <div class="container">
-  <div class="nav-wrapper">
+	 <div class="nav-wrapper">
 	<div class="nav-link-wrapper">
-      <a href="#">Terms</a>
+		<a href="#">Terms</a>
 	</div>
 	<div class="nav-link-wrapper">
-      <a href="#">Cookie Policy</a>
-    </div>
-  </div>
+		<a href="#">Cookie Policy</a>
+	</div>
+	<div class="nav-link-wrapper">
+		<a href="contact.html">Contact Us</a>
+	</div>
+	 </div>
 </div>
 <!-- Javascript for hovering over images -->
 <script>
