@@ -1,4 +1,4 @@
-<!--Author: Eric Peralta, Michael Edward Bates, Kevin Jeong Date: October 1, 2021-->
+<!--Author: Michael Bates, Kevin Anaya-->
 <!DOCTYPE html>
 <!--Specifies language used for website-->
 <html lang="en-US">
@@ -40,10 +40,6 @@ h1
   margin: 0;
   padding-top: 0px;
 }
-img.aboutuslogo 
-{
-  float: left;
-}
 h2
 {
 	font-size: 35px;
@@ -54,32 +50,28 @@ h2
 </head>
 <body>
 <!--Company Name/Logo-->
-<h1><img src="Images/logo.png" class="img-responsive" alt="Spray N' Paint Logo"/></h1>
+<h1><img src="Images/logo.png" class="img-responsive" style="width:100%" alt="Spray N' Paint Logo"/></h1>
 <!-- Navigation -->
-<div class="container">
+<div class="container-fluid">
 	<div class="nav-wrapper">
       <div class="left-side">
         <div class="nav-link-wrapper active-nav-link">
           <a href="index.html">Home</a>
         </div>
         <div class="nav-link-wrapper">
-          <a href="healingStones.html">WAIVER</a>
+          <a href="#">WAIVER</a>
         </div>
-		<div class="nav-link-wrapper">
-          <div class="dropdwn">
-		    <button class="dropbtn">EQUIPMENT</button>
-		    <div class="dropdwn-content">
-			  <a href="#">Helmets</a>
-			  <a href="#">Guns</a>
-			  <a href="#">Apparel</a>
-		    </div>
-		  </div>
-	    </div>
         <div class="nav-link-wrapper">
-          <a href="apparel.html">FIELDS</a>
+          <a href="#">FIELDS</a>
         </div>
 		<div class="nav-link-wrapper">
-          <a href="homeDecor.html">BOOK NOW</a>
+          <a href="#">BOOK NOW</a>
+        </div>
+		<div class="nav-link-wrapper">
+          <a href="about.html">ABOUT US</a>
+        </div>
+		<div class="nav-link-wrapper">
+          <a href="#">F.A.Q.</a>
         </div>
       </div>
       <div class="right-side">
@@ -91,10 +83,6 @@ h2
 		       <div class="searchInput">
 				<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
 		       </div>
-				<p style="padding: 12px 16px";><strong>Popular Searches</strong></p>
-		        <a href="guns.html">Guns</a>
-		        <a href="apparel.html">Clothing</a>
-		        <a href="contact.html">Contact</a>
 	          </div>
           </div>
 	    </div>
@@ -167,19 +155,20 @@ h2
     </div>
   </div>
 </div>
-<div class="container">
-	<!--Header for About Us page-->
-	<h2>About Us</h2>
+<!--Header for About Us page-->
+<h2 class="bg-warning" style="width:100%">About Us</h2>
+<div class="container-fluid bg-light">
 	<!--Information About Us, our company and includes image that floats on left side of page-->
-	<p class="right"><img class="aboutuslogo" src="Images/about.jpg" alt="Paintball is serious!" style="width:45%;;margin-right:15px;">
+	<img class="float-left" src="Images/about.jpg" alt="Paintball is serious!" style="width:50%">
+	<p>
 	  Our company was founded in 2021, built around a group of veteran players who have a passion for the sport. Our headquarters is located in Los Angeles California where we constantly brainstorm new ideas on how to increase the intensity and overall fun of paintball. We work tirelessly to create new equipment to enhance player experience. Originally we started out as a group of friends who had this aspiration to make the absolute best paintball park in the world with limited restrictions and an abundance of freedom. We always dreamed of making our paintball park the most intense using the latest and greatest technology at hand to not only increase competition but to bring more realism and futuristic styles of warfare. Also working towards bringing ideas from top video game franchises such as, <i>Call of Duty</i>, <i>Battlefield</i>, <i>Fortnite</i>, and many more, to life.<br><br>
 	</p>
-	<p style="text-align: right;"><strong>-SPRAY N' PAINT</strong></i></p>
+	<p style="text-align:center;"><strong>-SPRAY N' PAINT</strong></i></p>
 </div>
 <!--Newsletter Sign Up-->
-<form action="/action_page.php">
+<form>
     <h3>Subscribe to our Newsletter</h3>
-	<div class="containers">
+	<div class="containers pt-3">
       <input type="email" placeholder="Email address" name="mail" required>
 	  <input type="submit" value="Subscribe">
     </div>
@@ -187,20 +176,11 @@ h2
 <!--External Links-->
 <div class="container">
   <div class="nav-wrapper">
-    <div class="nav-link-wrapper active-nav-link">
-      <a href="about.html">About</a>
-    </div>
-    <div class="nav-link-wrapper">	
-	  <a href="faq.html">FAQ</a>
+	<div class="nav-link-wrapper">
+      <a href="#">Terms</a>
 	</div>
 	<div class="nav-link-wrapper">
-      <a href="termsandconditions.html">Terms</a>
-	</div>
-	<div class="nav-link-wrapper">
-      <a href="cookiePolicy.html">Cookie Policy</a>
-    </div>
-	<div class="nav-link-wrapper">
-	  <a href="contact.html">Contact Us</a>
+      <a href="#">Cookie Policy</a>
     </div>
   </div>
 </div>
