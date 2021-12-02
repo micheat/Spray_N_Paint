@@ -1,0 +1,834 @@
+/*Nav Menu Dropdown menue*/
+.dropdwn {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdwn .dropbtn {
+  font-size: 14px;  
+  border: none;
+  outline: none;
+  color: #8a8a8a;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-wrapper a:hover, .dropdwn:hover .dropbtn {
+    color: black;
+	text-decoration: none;
+}
+
+.dropdwn-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdwn-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdwn-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdwn:hover .dropdwn-content {
+  display: block;
+}
+p
+{
+	color: black;
+}
+p2
+{
+	font-family: inherit;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
+/*Organizes page dimensions for excess content*/
+html, body 
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*Background image*/
+body
+{
+	margin: 0;
+	display: box;
+}
+/* Adjusts margins for pages without images */
+.bodyMargin 
+{
+    margin-left: 10px;
+}
+/* Grid for homepage images */
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* Navigation display */
+.nav-wrapper 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+/* Left side of Navigation */
+.left-side 
+{
+    display: flex;
+}
+.right-side
+{
+	display: flex;
+}
+.nav-wrapper > .right-side > div
+{
+	margin-left: 20px;
+	text-uniform: uppercase;
+	font-size: 14px;
+}
+/* Left side Navigation text format */
+.nav-wrapper > .left-side > div 
+{
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+/* Navigation display */
+.nav-link-wrapper 
+{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+/* Color to indicate active page */
+.active-nav-link 
+{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a 
+{
+    color: black !important;
+}
+
+/* Navigation hover */
+.nav-link-wrapper a 
+{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-link-wrapper:hover 
+{
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover 
+{
+    color: black;
+	text-decoration: none;
+}
+/* Formats images on homepage */
+.portfolio-items-wrapper 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 50px;
+	margin-bottom: 45px;
+}
+.portfolio-item-wrapper 
+{
+    position: relative;
+	padding: 0 10px;
+}
+.portfolio-img-background 
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+    max-width: 100%;
+}
+.portfolio-img-backgroundAd 
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    max-width: 100%;
+}
+.img-text-wrapper 
+{
+    position: absolute;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.four-column-wrapper 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*Table for columned product cards*/
+/* Float four columns side by side */
+.column 
+{
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row 
+{
+	margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Search box*/
+.nav-link-wrapper > .fa-search
+{
+	display: inline-flex;
+	float: right;
+	border: none;
+	color: #000000;
+}
+
+/*Cart alignment*/
+.fa-shopping-basket
+{
+	margin-right: 5px;
+}
+.fa-user
+{
+	background-color: #fff;
+	margin-right: 5px;
+}
+/*Dropdown menu for search function*/
+.dropbtn 
+{
+  background-color: #fff;
+  color: black;
+  padding: 0 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+.dropbtn:hover, .dropbtn:focus 
+{
+  background-color: #fff;
+  outline: none;
+}
+
+#myInput 
+{
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus 
+{
+	outline: 3px solid #ddd;
+}
+
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover 
+{
+	background-color: #ddd;
+}
+
+.show 
+{
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover 
+{
+	background-color: #fff
+}
+
+/*Product slideshow*/
+.slider-item
+{
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    background: #FFF;
+	margin-bottom: 50px;
+}
+.slider-item .slider-image img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+.slider-item .slider-main-detail
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+.slider-item:hover .slider-main-detail
+{
+    background-color: #dbeeee !important;
+}
+.slider-item .price
+{
+    float: left;
+    margin-top: 5px;
+}
+.slider-item .price h5
+{
+    line-height: 20px;
+    margin: 0;
+}
+.detail-price
+{
+    color: #f18100;
+}
+.slider-item .slider-main-detail .rating
+{
+    color: #777;
+}
+.slider-item .rating
+{
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+.slider-item .btn-add
+{
+    width: 50%;
+    float: left;
+    border-right: 1px solid #E1E1E1;
+}
+.slider-item .btn-details
+{
+    width: 50%;
+    float: left;
+}
+.controls
+{
+    margin-top: 20px;
+}
+.btn-info,.btn-info:visited,.btn-info:hover
+{
+	background-color: #fe8800;
+	border-color: #fe8800;
+}
+.btn-info
+{
+	margin-left:5px;
+}
+.slider-main-detail:hover
+{
+	background-color: #dbeeee !important;
+}
+.AddCart
+{
+	margin: 0px;
+	padding:5px;
+	border-radius:2px;
+	margin-right:10px;
+	width: 110px;
+}
+.review 
+{
+	margin-bottom: 5px;
+	padding-top:5px;
+}
+
+form
+{
+  font-family: Arial;
+}
+h3
+{
+	text-align: center;
+}
+.containers 
+{
+  padding-left: 300px;
+  padding-right: 300px;
+  height: 150pxpx;
+  background-color: #fff;
+  display: flex;
+  float: inline;
+}
+.searchInput input[type=text]
+{
+  width: 100%;
+}
+input[type=text], input[type=submit] 
+{
+  width: 50%;
+  height: 50px;
+  padding: 12px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input[type=submit] 
+{
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+input[type=submit]:hover 
+{
+  opacity: 0.8;
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+	outline: none;
+}
+/*Contact page forms*/
+* 
+{
+    box-sizing: border-box;
+}
+.contactInput input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #212c2d;
+    border-radius: 4px;
+    resize: vertical;
+	outline: none;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.contactSubmit input[type=submit] {
+    background-color: #fe8800;
+    color: white;
+	width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+	outline: none;
+}
+.contactSubmit input[type=submit]:hover 
+{
+	opacity: 0.9;
+}
+.container-contact {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/*Login Styles*/
+/* Center the image and position the close button */
+.imgcontainer 
+{
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+img.avatar 
+{
+  width: 30%;
+  border-radius: 50%;
+}
+.container-login 
+{
+  padding: 16px;
+}
+span.psw 
+{
+  float: right;
+  padding-top: 16px;
+}
+/* The Modal (background) */
+.modal-login 
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* Modal Content/Box */
+.modal-content-login 
+{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* Add Zoom Animation */
+.animate 
+{
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+.loginbtn
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) 
+{
+  span.psw 
+  {
+    display: block;
+    float: none;
+  }
+  .cancelbtn 
+  {
+    width: 100%;
+  }
+}
+
+/*Sign Up Styles*/
+/* Full-width input fields */
+.accountInput input[type=text], input[type=password] 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+/* Add a background color when the inputs get focus */
+.accountInput input[type=text]:focus, input[type=password]:focus 
+{
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for all buttons */
+.btn-accounts button
+{
+	background-color: #fff;
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-decoration: none;
+}
+button:focus
+{
+  outline-style: none;
+}
+button:hover 
+{
+  color: black;
+  opacity: 1;
+}
+.signupbtn
+{
+	color: white;
+	border: none;
+	padding: 14px 20px;
+	background-color: #4CAF50;
+}
+/* Extra styles for the cancel button */
+.cancelbtn 
+{
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Add padding to container elements */
+.container-signup
+{
+  padding: 16px;
+}
+/* The Modal (background) */
+.modal-signup
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+/* Modal Content/Box */
+.modal-content 
+{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom                             and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* Style the horizontal ruler */
+hr 
+{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* The Close Button (x) */
+.close 
+{
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover, .close:focus 
+{
+  color: red;
+  cursor: pointer;
+}
+/* Clear floats */
+.clearfix::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) 
+{
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/*Navigation responsiveness*/
+@media only screen and (max-width: 980px)
+{
+	.dropbtn
+	{
+		width: 100%;
+	}
+	.dropdown
+	{
+		width: 100%;
+	}
+	.dropdown-content
+	{
+		width: 100%;
+	}
+	.fa-search-basket
+	{
+		width: 100%;
+	}
+	.nav-wrapper
+	{
+		width: 100%;
+	}
+	.nav-link-wrapper
+	{
+		width: 100%;
+	}
+	.nav-link-wrapper a
+	{
+		width: 100%;
+	}
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) 
+{
+  .column 
+  {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .container
+  {
+	  width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+	.container
+	{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive 
+	{
+        width: 100%;
+    }
+	.containter
+	{
+		width: 100%;
+	}
+}
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) 
+{
+    #primary { 
+			   width:67%; 
+			 }
+    #secondary { 
+				 width:30%; margin-left:3%;
+			   }  
+}
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) 
+{
+    #primary { 
+				width:100%; 
+			 }
+    #secondary { 
+				 width:100%; margin:0; border:none; 
+			   }
+}
+img { 
+	  max-width: 100%; height: auto; 
+	}
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+/*Typography Responsive*/
+html { font-size:100%; }
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
