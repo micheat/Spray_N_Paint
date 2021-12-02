@@ -1,7 +1,3 @@
-$(document).ready(function(){
-    
-});    
-
 const PRODUCTS = {
     product_1: {
         id: "product_1",
@@ -38,21 +34,21 @@ const PRODUCTS = {
         price: 59.99,
         stars: 3,
         image: "Images/guns/Gun_3.jpg"  
-    } product_6: {
+    }, product_6: {
         id: "product_6",
         name: "SNP Black and Brown Paintball Armor",
         description: "Simple full upper body paintball armor made by us, this is the same type of armor that we rent out for guests playing on our field.",
         price: 44.99,
         stars: 5,
         image: "Images/apparel/Suit_1.jpg"  
-    } product_7: {
+    }, product_7: {
         id: "product_7",
         name: "tld Chest Paintball Armor",
         description: "Simple torso-only paintball armor made by tld.",
         price: 29.99,
         stars: 4,
         image: "Images/apparel/Suit_2.jpg"  
-    } product_8: {
+    }, product_8: {
         id: "product_8",
         name: "Dye Elbow Pads",
         description: "Great and affordable elbow pads made by Dye, a perfect match for torso-only paintball armor.",
@@ -61,3 +57,35 @@ const PRODUCTS = {
         image: "Images/apparel/Pads.jpg"  
     }
 };
+
+$(document).ready(function(){
+    showProducts();
+    
+});    
+
+function getProductHTML(productId) {
+
+    const product = PRODUCTS[productId];
+
+    const productHTML = $("#product-template");
+    productHTML.prop("id", "");
+    productHTML.removeClass('d-none');
+
+    productHTML.find(".product-name").text(product.name);
+    productHTML.find(".product-price").text(product.price);
+
+    const imageE = productHTML.find(".card-img-top");
+    imageE.prop("src", product.image);
+    imageE.prop("alt", product.name);
+
+
+    return productHTML;
+}
+
+function showProducts() {
+    for(let product in PRODUCTS) {
+        const productHTML = getProductHTML(product);
+
+        $("#products").append(productHTML);
+    }
+}
