@@ -1,4 +1,4 @@
-<!--Author: Michael Edward Bates, Kevin Anaya-->
+<!--Author: Eric Peralta, Michael Edward Bates, Kevin Jeong Date: October 1, 2021-->
 <!DOCTYPE html>
 <!--Specifies language used for website-->
 <html lang="en-US">
@@ -43,28 +43,32 @@ h1
 </head>
 <body>
 <!--Company Name/Logo-->
-<h1><img src="Images/logo.png" class="img-responsive" style="width:100%" alt="Spray N' Paint Logo"/></h1>
+<h1><img src="Images/logo.png" class="img-responsive" alt="Spray N' Paint Logo"/></h1>
 <!-- Navigation -->
-<div class="container-fluid">
+<div class="container">
 	<div class="nav-wrapper">
       <div class="left-side">
         <div class="nav-link-wrapper active-nav-link">
           <a href="index.html">Home</a>
         </div>
         <div class="nav-link-wrapper">
-          <a href="#">WAIVER</a>
+          <a href="healingStones.html">WAIVER</a>
         </div>
+		<div class="nav-link-wrapper">
+          <div class="dropdwn">
+		    <button class="dropbtn">EQUIPMENT</button>
+		    <div class="dropdwn-content">
+			  <a href="#">Helmets</a>
+			  <a href="#">Guns</a>
+			  <a href="#">Apparel</a>
+		    </div>
+		  </div>
+	    </div>
         <div class="nav-link-wrapper">
-          <a href="#">FIELDS</a>
+          <a href="apparel.html">FIELDS</a>
         </div>
 		<div class="nav-link-wrapper">
-          <a href="#">BOOK NOW</a>
-        </div>
-		<div class="nav-link-wrapper">
-          <a href="about.html">ABOUT US</a>
-        </div>
-		<div class="nav-link-wrapper">
-          <a href="#">F.A.Q.</a>
+          <a href="homeDecor.html">BOOK NOW</a>
         </div>
       </div>
       <div class="right-side">
@@ -76,6 +80,10 @@ h1
 		       <div class="searchInput">
 				<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
 		       </div>
+				<p style="padding: 12px 16px";><strong>Popular Searches</strong></p>
+		        <a href="guns.html">Guns</a>
+		        <a href="apparel.html">Clothing</a>
+		        <a href="contact.html">Contact</a>
 	          </div>
           </div>
 	    </div>
@@ -148,45 +156,47 @@ h1
     </div>
   </div>
 </div>
-<!-- Container for images -->
-<div class="container-fluid">
-    <div class="content-wrapper text-center">
+<!--Advertisement Image-->
+<img src="Images/main.jpg" alt="Reserve Now image" style="width: 100%; position: relative;">
+<div class="container">
+	<!-- Container for images -->
+    <div class="content-wrapper">
       <div class="portfolio-items-wrapper">
         <div class="portfolio-item-wrapper">
-            <a href=".html">
+            <a href="helmets.html">
                 <div class="portfolio-img-background" style="background-image:url(Images/)";></div>
             </a>
-			<p2>Events</p2>
-			<a href="oils.html">
-			<p>Upcoming Events</p>
+			<p2>Helmets</p2>
+			<a href="helmets.html">
+			<p>Shop our collection of Helmets</p>
 			</a>
 		</div>
         <div class="portfolio-item-wrapper">
-          <a href=".html">
+          <a href="apparel.html">
             <div class="portfolio-img-background" style="background-image:url(Images/)"></div>
           </a>
-		  <p2>Deals</p2>
-		  <a href="oils.html">
-		  <p>Check out our latest deals</p>
+		  <p2>Paintball Apparel</p2>
+		  <a href="apparel.html">
+		  <p>Shop our new clothing line</p>
 		  </a>
         </div>
-		<div class="portfolio-item-wrapper">
-          <a href=".html">
-            <div class="portfolio-img-background" style="background-image:url(Images/)"></div>
-          </a>
-		  <p2>Media</p2>
-		  <a href=".html">
-		  <p>Check out gameplay</p>
-		  </a>
-        </div>
+        <div class="portfolio-item-wrapper">
+			<a href="apparel.html">
+			<div class="portfolio-img-background" style="background-image:url(Images/)"></div>         
+			</a>
+			<p2>Guns Collection</p2>
+			<a href="guns.html">
+			<p>Shop our paintball guns collection</p>
+			</a>
+		</div>
       </div>
     </div>
 </div>
 <!--Best Products Carousel-->
-<div class="container-fluid">
-  <div class="row bg-warning pb-2">
+<div class="container">
+  <div class="row">
     <div class="col-md-6 col-sm-6 col-xs-12">
-      <h3 class="pull-left">Best Selling Products</h3>
+      <h3>Best Selling Products</h3>
     </div>
     <div class="col-md-6 col-sm-6 col-xs-6 hidden-xs">
       <div class="controls pull-right">
@@ -194,7 +204,7 @@ h1
       </div>
     </div>
   </div>
-  <div id="carousel-example" class="carousel slide hidden-xs pt-3 bg-light" style="width:100%" data-ride="carousel" data-type="multi">
+  <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel" data-type="multi">
     <div class="carousel-inner">
       <div class="item active">
         <div class="row">
@@ -222,7 +232,7 @@ h1
                       <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-6">
-                      <a href="cart.html" class="AddCart btn btn-info pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                      <a href="cart.html" class="AddCart btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
                     </div>
                   </div>
                 </div>
@@ -253,7 +263,7 @@ h1
                         <i class="fa fa-star" aria-hidden="true"></i>
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-6">
-                        <a href="cart.html" class="AddCart btn btn-info pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                        <a href="cart.html" class="AddCart btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
                       </div>
                     </div>
                   </div>
@@ -284,7 +294,7 @@ h1
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-6">
-                        <a href="cart.html" class="AddCart btn btn-info pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                        <a href="cart.html" class="AddCart btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
                       </div>
                     </div>
                   </div>
@@ -315,7 +325,7 @@ h1
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-6">
-                        <a href="cart.html" class="AddCart btn btn-info pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                        <a href="cart.html" class="AddCart btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
                       </div>
                     </div>
                   </div>
@@ -350,7 +360,7 @@ h1
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-6">
-                        <a href="cart.html" class="AddCart btn btn-info pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                        <a href="cart.html" class="AddCart btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
                       </div>
                     </div>
                   </div>
@@ -381,7 +391,7 @@ h1
                         <i class="fa fa-star" aria-hidden="true"></i>
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-6">
-                        <a href="cart.html" class="AddCart btn btn-info pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                        <a href="cart.html" class="AddCart btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
                       </div>
                     </div>
                   </div>
@@ -412,7 +422,7 @@ h1
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-6">
-                        <a href="cart.html" class="AddCart btn btn-info pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                        <a href="cart.html" class="AddCart btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
                       </div>
                     </div>
                   </div>
@@ -443,7 +453,7 @@ h1
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-6">
-                        <a href="cart.html" class="AddCart btn btn-info pull-right"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
+                        <a href="cart.html" class="AddCart btn btn-info"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</a>
                       </div>
                     </div>
                   </div>
@@ -455,14 +465,46 @@ h1
     </div>
   </div>
 </div>
-<div>
-	<!--Advertisement Image-->
-	<img src="Images/main.jpg" alt="main advertisement image" class="img-responsive" style="width:100%">
+<!--Advertisement Image-->
+<img src="Images/" alt="Ad for park rules" style="width: 100%; margin-top: 50px;">
+<div class="container">
+	<!-- Container for images -->
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+        <div class="portfolio-item-wrapper">
+            <a href=".html">
+                <div class="portfolio-img-background" style="background-image:url(Images/)";></div>
+            </a>
+			<p2>Events</p2>
+			<a href="oils.html">
+			<p>Upcoming Events</p>
+			</a>
+		</div>
+        <div class="portfolio-item-wrapper">
+          <a href=".html">
+            <div class="portfolio-img-background" style="background-image:url(Images/)"></div>
+          </a>
+		  <p2>Deals</p2>
+		  <a href="oils.html">
+		  <p>Check out our latest deals</p>
+		  </a>
+        </div>
+		<div class="portfolio-item-wrapper">
+          <a href=".html">
+            <div class="portfolio-img-background" style="background-image:url(Images/)"></div>
+          </a>
+		  <p2>Media</p2>
+		  <a href=".html">
+		  <p>Check out gameplay</p>
+		  </a>
+        </div>
+      </div>
+    </div>
 </div>
 <!--Newsletter Sign Up-->
-<form>
+<form action="/action_page.php">
     <h3>Subscribe to our Newsletter</h3>
-	<div class="containers pt-3">
+	<div class="containers">
       <input type="email" placeholder="Email address" name="mail" required>
 	  <input type="submit" value="Subscribe">
     </div>
@@ -470,11 +512,20 @@ h1
 <!--External Links-->
 <div class="container">
   <div class="nav-wrapper">
-	<div class="nav-link-wrapper">
-      <a href="#">Terms</a>
+    <div class="nav-link-wrapper">
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-link-wrapper">	
+	  <a href="faq.html">FAQ</a>
 	</div>
 	<div class="nav-link-wrapper">
-      <a href="#">Cookie Policy</a>
+      <a href="termsandconditions.html">Terms</a>
+	</div>
+	<div class="nav-link-wrapper">
+      <a href="cookiePolicy.html">Cookie Policy</a>
+    </div>
+	<div class="nav-link-wrapper">
+	  <a href="contact.html">Contact Us</a>
     </div>
   </div>
 </div>
